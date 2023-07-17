@@ -4,22 +4,22 @@
     {
         static void Main(string[] args)
         {
-            IMessageSender email = new EmailSender();
-            IMessageSender queue = new SMSSender();
-            IMessageSender web = new WebServiceSender();
+            IMessageSender emailSender = new EmailSender();
+            IMessageSender smsSender = new SMSSender();
+            IMessageSender webServiceSender = new WebServiceSender();
 
             var sysmsg = new SystemMessage
             {
                 Subject = "Test主旨",
                 Body = "Test信件內容",
-                MessageSender = email
+                MessageSender = emailSender
             };
             sysmsg.Send();
 
-            sysmsg.MessageSender = queue;
+            sysmsg.MessageSender = smsSender;
             sysmsg.Send();
 
-            sysmsg.MessageSender = web;
+            sysmsg.MessageSender = webServiceSender;
             sysmsg.Send();
 
             var usermsg = new UserMessage
@@ -28,14 +28,14 @@
                 Body = "Test信件內容",
                 UserComments = "Test使用者評論",
 
-                MessageSender = email
+                MessageSender = emailSender
             };
             usermsg.Send();
 
-            usermsg.MessageSender = queue;
+            usermsg.MessageSender = smsSender;
             usermsg.Send();
 
-            usermsg.MessageSender = web;
+            usermsg.MessageSender = webServiceSender;
             usermsg.Send();
 
             Console.ReadKey();

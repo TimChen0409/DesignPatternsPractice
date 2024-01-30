@@ -1,4 +1,3 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
@@ -20,6 +19,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Decorator", "Decorator\Decorator.csproj", "{75E987E3-9CE1-4745-901C-7867A0FD0E08}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Singleton", "Singleton\Singleton.csproj", "{D1218E21-5E10-446A-A5BD-B2A47AA5BEAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facade", "Facade\Facade.csproj", "{FF5D991A-E523-4185-A96D-B577142E8D21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +64,10 @@ Global
 		{D1218E21-5E10-446A-A5BD-B2A47AA5BEAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1218E21-5E10-446A-A5BD-B2A47AA5BEAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1218E21-5E10-446A-A5BD-B2A47AA5BEAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF5D991A-E523-4185-A96D-B577142E8D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF5D991A-E523-4185-A96D-B577142E8D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF5D991A-E523-4185-A96D-B577142E8D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF5D991A-E523-4185-A96D-B577142E8D21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,4 +76,3 @@ Global
 		SolutionGuid = {E07FA0A9-A61A-46EA-AB4F-298AE4F23617}
 	EndGlobalSection
 EndGlobal
-
